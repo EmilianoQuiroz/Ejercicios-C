@@ -11,7 +11,7 @@ int main()
     printf("Ingrese la medida de la base menor \n");
     /*3.Ingresamos los datos en las variables correspondientes*/
     scanf("%f", &baseMenor);
-    //Repetimos este proceso para cada dato que necesitemos
+    //Repetimos este proceso para cada dato que necesitemos  
     printf("Ingrese la medida de la base mayor \n");
     scanf("%f", &baseMayor);
 
