@@ -12,6 +12,7 @@ int main()
 {
     /*1.Declaramos las variables que vamos a utilizar*/
     char marca[20];
+    int valor = 0;
     float precio,descuento,precioFinal;
 
     /*2.Pedimos al usuario que digite la marca de la moto*/
@@ -27,20 +28,29 @@ int main()
     /*5.Guardamos el valor en la variable correspondiente*/
     scanf("%f", &precio);
 
+
+    if(strcmp(marca,"Honda")==0){
+        valor = 1;
+    }else if(strcmp(marca,"Yamaha")==0){
+        valor = 2;
+    }else if(strcmp(marca,"Suzuki")==0){
+        valor = 3;
+    }
+
     /*6.Ejecutamos el condicional switch*/
-    switch (marca)
+    switch(marca)
     {
-    case "Honda":
+    case 1:
         descuento = precio * .5;
         precioFinal = precio + descuento;
         printf("El precio final es de %.2f \n", precioFinal);
     break;
-    case "Yanaha":
+    case 2:
         descuento = precio * .8;
         precioFinal = precio + descuento;
         printf("El precio final es de %.2f \n", precioFinal);
     break;   
-    case "Suzuki":
+    case 3:
         descuento = precio * .19;
         precioFinal = precio + descuento;
         printf("El precio final es de %.2f \n", precioFinal);
