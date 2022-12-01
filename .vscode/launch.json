@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/santiago/Escritorio/C/Ejercicios-En-C/00-EjerciciosOperacionesYExpreciones",
-      "program": "/home/santiago/Escritorio/C/Ejercicios-En-C/00-EjerciciosOperacionesYExpreciones/build/Debug/outDebug",
+      "cwd": "/home/santiago/Escritorio/C/Ejercicios-En-C",
+      "program": "/home/santiago/Escritorio/C/Ejercicios-En-C/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

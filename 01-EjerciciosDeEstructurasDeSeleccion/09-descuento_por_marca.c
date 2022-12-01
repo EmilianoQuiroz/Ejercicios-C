@@ -28,21 +28,21 @@ int main()
     /*5.Guardamos el valor en la variable correspondiente*/
     scanf("%f", &precio);
 
-
+    /*Igualamos los valores de tipo char a tipo int con la funcion strcmp para ponerlos en los cases*/
     if(strcmp(marca,"Honda")==0){
         valor = 1;
     }else if(strcmp(marca,"Yamaha")==0){
         valor = 2;
     }else if(strcmp(marca,"Suzuki")==0){
         valor = 3;
-    }
+    }/*STRCP/String compare = La función strcpy copia la cadena a la cual señala s2 (incluyendo el carácter nulo de terminación) al arreglo al cual señala s1. Si la copia se lleva a cabo entre objetos que se superponen, el comportamiento queda indefinido. La función strcpy devuelve el valor de s1*/
 
     /*6.Ejecutamos el condicional switch*/
-    switch(marca)
+    switch(valor)
     {
     case 1:
         descuento = precio * .5;
-        precioFinal = precio + descuento;
+        precioFinal = precio - descuento;
         printf("El precio final es de %.2f \n", precioFinal);
     break;
     case 2:
@@ -52,12 +52,12 @@ int main()
     break;   
     case 3:
         descuento = precio * .19;
-        precioFinal = precio + descuento;
+        precioFinal = precio - descuento;
         printf("El precio final es de %.2f \n", precioFinal);
     break; 
     default:
         descuento = precio * .2;
-        precioFinal = precio + descuento;
+        precioFinal = precio - descuento;
         printf("El precio final es de %.2f \n", precioFinal);
         break;
     }
