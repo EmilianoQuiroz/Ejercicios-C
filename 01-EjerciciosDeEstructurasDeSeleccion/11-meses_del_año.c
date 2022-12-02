@@ -53,6 +53,9 @@ int main()
     case 12:
         printf("Diciembre");
         break;
+    default: 
+        printf("No ingreso un numero valido");
+        break;
     }
     
 
