@@ -10,13 +10,16 @@ caso 3: salir */
 
 int main(){
     int numero,opcion,cubo;
-    printf("\tMENU");
+    do{
+    	
+    printf("\nMENU");
     printf("\n1. Cubo de un numero");
     printf("\n2. Numero par o impar");
     printf("\n3. Salir");
     printf("\nOpcion: ");
     scanf("%i",&opcion);
 
+	
     switch(opcion){
         case 1:
             printf("Seleccionaste cubo de un numero\n");
@@ -36,10 +39,13 @@ int main(){
             }
             break;
         case 3:
-            break;
+        	printf("Fin del programa");
+        	break;
         default:
             printf("\nOpcion no valida");
     }
+	}while(opcion != 3);
+	
 
     return 0;
 }
