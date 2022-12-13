@@ -13,7 +13,7 @@ int main()
 
     raizcuadrada = sqrt(numero);
 
-    printf("La raiz cuadrada es %.2f", raizcuadrada);
+    printf("La raiz cuadrada es %.2f \n", raizcuadrada);
 
 
 

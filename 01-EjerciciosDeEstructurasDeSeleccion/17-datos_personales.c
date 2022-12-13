@@ -21,10 +21,10 @@ int main()
     printf("Digite su edad: \n");
     scanf("%d", &edad);
 
-    if((strcmp(sexo, "femenino")==0) && edad >= 18){
+    if((strcmp(sexo, "femenino\n")==0) && edad >= 18){
         printf("Usuario aprobado");
     }else{
-        printf("Usuario denegado");
+        printf("Usuario denegado\n");
     }
 
 
